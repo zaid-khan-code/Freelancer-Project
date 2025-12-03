@@ -9,109 +9,109 @@
 </head>
 
 <body class="bg-[#000] overflow-x-hidden h-[1000vh]">
-    <header class="relative navbar w-full h-[80px] sm:h-[100px] lg:h-[120px] bg-transparent">
-        <nav class="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                  max-w-[1170px] w-full flex justify-between items-center ">
+        <header class="relative navbar w-full h-[80px] mt-3 md:mt-0 sm:h-[100px] lg:h-[120px] bg-transparent">
+            <nav class="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                    max-w-[1170px] w-full flex justify-between items-center ">
 
-            <div><div class="flex justify-center items-center w-max gap-6 md:gap-8">
-                <div class="font-bold cursor-pointer text-lg md:text-2xl text-[#25A4AD]">Payme
-                </div>
-                <div class="gap-6 md:gap-[55px] w-max hidden md:flex">
-                    <a href="#home"
-                        class="cursor-pointer text-base md:text-lg font-normal hover:text-[#25A4AD] transition-colors">Home</a>
-                    <a href="#about"
-                        class="cursor-pointer text-base md:text-lg font-normal hover:text-[#25A4AD] transition-colors">About</a>
-                    <a href="#testimonials"
-                        class="cursor-pointer text-base md:text-lg font-normal hover:text-[#25A4AD] transition-colors">Testimonials</a>
-                    <a href="#contact"
-                        class="cursor-pointer text-base md:text-lg font-normal hover:text-[#25A4AD] transition-colors">Contact</a>
-                </div>
-            </div>
-            
-            
-            <div class="md:flex hidden justify-center items-center w-max gap-4 md:gap-1">
-                <button href="#signin"
-                    class="border w-2/4 text-[16px]  font-normal text-[#000] cursor-pointer hover:text-[#25A4AD] transition-colors">Sign
-                </button>
-                <button
-                    class="w-2/4 bg-transparent text-[#25A4AD] border border-[#25A4AD] text-[16px] font-normal rounded-[8px] hover:bg-[#25A4AD] hover:text-white transition-all duration-300">
-                    Sign
-                </button>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden flex justify-center items-center">
-                <button id="menu-btn"
-                    class="inline-flex items-center justify-center gap-2 text-sm font-medium transition-all duration-300 h-9 rounded-md px-2 bg-[#25A4AD] text-white hover:bg-[#1e8a91]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 sm:w-6 sm:h-6">
-                        <line x1="4" x2="20" y1="12" y2="12" />
-                        <line x1="4" x2="20" y1="6" y2="6" />
-                        <line x1="4" x2="20" y1="18" y2="18" />
-                    </svg>
-                </button>
-            </div></div>
-        </nav>
-    </header>
+                <div class="flex w-full justify-between items-center mr-5">
+                    <div class="flex justify-center items-center w-max ml-5 gap-6 md:gap-8">
+                        <div class="font-bold cursor-pointer text-lg md:text-2xl text-[#25A4AD]">Payme</div>
+                        <div class="gap-6 lg:gap-14 w-max hidden md:flex">
+                            <a href="#home"
+                                class="cursor-pointer text-base md:text-lg font-normal hover:text-[#25A4AD] transition-colors">Home</a>
+                            <a href="#about"
+                                class="cursor-pointer text-base md:text-lg font-normal hover:text-[#25A4AD] transition-colors">About</a>
+                            <a href="#testimonials"
+                                class="cursor-pointer text-base md:text-lg font-normal hover:text-[#25A4AD] transition-colors">Testimonials</a>
+                            <a href="#contact"
+                                class="cursor-pointer text-base md:text-lg font-normal hover:text-[#25A4AD] transition-colors">Contact</a>
+                        </div>
+                    </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-overlay"
-        class="mobile-overlay h-screen fixed inset-0 z-[100000] w-full bg-[rgba(0,0,0,0.9)] backdrop-blur-md hidden transition-all duration-300">
-        <div class="flex flex-col items-center justify-center h-full gap-6 sm:gap-8 px-6">
-            <a href="#home"
-                class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Home</a>
-            <a href="#about"
-                class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">About</a>
-            <a href="#testimonials"
-                class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Testimonials</a>
-            <a href="#contact"
-                class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Contact</a>
-            <div class="flex gap-[10px]">
-                <a href="#signin"
-                    class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Sign
-                    In</a>
-                <p
-                    class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">
-                    /</p>
-                <a href="#signup"
-                    class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Sign
-                    Up</a>
-            </div>
-            <button id="close-btn"
-                class="mt-6 sm:mt-8 py-3 px-8 bg-[#25A4AD] text-white rounded-lg hover:bg-[#1e8a91] transition-all duration-300 shadow-lg hover:shadow-xl">
-                Close
-            </button>
-        </div>
-    </div>
 
-    <main class="w-full absolute top-0 z-10">
-        <section
-            class="flex bg-white items-center overflow-x-hidden w-full min-h-screen md:min-h-0 md:h-screen md:max-h-screen bg-no-repeat bg-center bg-cover"
-            style="background-image: url(./Assets/images/Group-1328-837c3f.png);">
-            <div class="ml-auto mr-auto w-[45%]">
-                <div class="flex flex-col gap-3">
-                    <h1 class="flex flex-col text-[#000000] text-4xl font-normal">
-                        Providing Best
-                        <span class="text-[#25A4AD] font-normal text-3xl">Web Services</span>
-                    </h1>
-                    <p class="text-[#313131] text-sm">
-                        Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise
-                        screened no up as.</p>
-                    <div class="flex gap-2">
-                        <button
-                            class="bg-[#25A4AD] border border-[#25A4AD] text-[#fff] text-xs px-2 py-2 font-normal">Get
-                            Started</button>
-                        <button
-                            class="bg-transparent border border-[#25A4AD] text-[#25A4AD] text-xs px-2 py-2 font-normal">Explore
-                            More</button>
+                    <div class="md:flex hidden justify-center items-center w-1/4 gap-4 md:gap-1">
+                        <button href="#signin"
+                            class="border w-2/4 text-xs md:text-sm lg:text-base px-2 md:px-3 lg:px-4 py-1 md:py-2  font-normal text-[#000] cursor-pointer hover:text-[#25A4AD] transition-colors">Sign In
+                        </button>
+                        <button class="w-2/4 bg-transparent text-[#25A4AD] border border-[#25A4AD] text-xs md:text-sm lg:text-base px-2 md:px-3 lg:px-4 py-1 md:py-2 font-normal rounded-[8px] hover:bg-[#25A4AD] hover:text-white transition-all duration-300 min-h-10">Sign Up</button>
+                            
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex justify-center items-center">
+                        <button id="menu-btn"
+                            class="inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-medium transition-all duration-300 h-9 rounded-md px-2 bg-[#25A4AD] text-white hover:bg-[#1e8a91]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="w-6 h-6 sm:w-6 sm:h-6">
+                                <line x1="4" x2="20" y1="12" y2="12" />
+                                <line x1="4" x2="20" y1="6" y2="6" />
+                                <line x1="4" x2="20" y1="18" y2="18" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
+            </nav>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-overlay"
+            class="mobile-overlay h-screen fixed inset-0 z-[100000] w-full bg-[rgba(0,0,0,0.9)] backdrop-blur-md hidden transition-all duration-300">
+            <div class="flex flex-col items-center justify-center h-full gap-6 sm:gap-8 px-6">
+                <a href="#home"
+                    class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Home</a>
+                <a href="#about"
+                    class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">About</a>
+                <a href="#testimonials"
+                    class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Testimonials</a>
+                <a href="#contact"
+                    class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Contact</a>
+                <div class="flex gap-[10px]">
+                    <a href="#signin"
+                        class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Sign
+                        In</a>
+                    <p
+                        class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">
+                        /</p>
+                    <a href="#signup"
+                        class="text-white text-lg sm:text-xl font-medium hover:text-[#25A4AD] transition-colors duration-300">Sign
+                        Up</a>
+                </div>
+                <button id="close-btn"
+                    class="mt-6 sm:mt-8 py-3 px-8 bg-[#25A4AD] text-white rounded-lg hover:bg-[#1e8a91] transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Close
+                </button>
             </div>
-            <div class="flex justify-center items-center w-6/12 ">
-                <img class="w-[100%] md:w-8/12 hover:-rotate-12 hover:scale-105 transition-all duration-300 ease-in-out" src="./Assets/images/hero-section-Image.png" alt="Hero Section Image" width="200" height="200">
-            </div>
-        </section>
-    </main>
+        </div>
+
+        <main class="w-full absolute overflow-hidden top-0 z-10">
+            <section
+                class="flex bg-white items-center overflow-hidden w-full min-h-screen md:min-h-[800px] md:h-screen md:max-h-screen bg-no-repeat bg-center bg-cover"
+                style="background-image: url(./Assets/images/Group-1328-837c3f.png);">
+                <div class="ml-auto mr-auto w-[45%]">
+                    <div class="flex flex-col gap-3">
+                        <h1 class="flex flex-col text-[#000000] text-4xl font-light md:text-5xl lg:text-7xl lg:font-thin">Providing Best
+                            <span class="text-[#25A4AD] font-normal  text-3xl md:text-6xl md:font-medium lg:text-8xl lg:font-normal">Web Services</span>
+                        </h1>
+                        <p class="text-[#313131] text-sm sm:text-base md:text-lg">
+                            Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise
+                            screened no up as.</p>
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-[#25A4AD] border border-[#25A4AD] text-[#fff] text-sm sm:text-base md:text-lg px-2 py-2 font-normal">Get
+                                Started</button>
+                            <button
+                                class="bg-transparent border border-[#25A4AD] text-[#25A4AD] text-sm sm:text-base md:text-lg px-2 py-2 font-normal">Explore
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center w-6/12 ">
+                    <img class="w-[100%] md:w-8/12 hover:-rotate-12 md:absolute lg:relative lg:-top-3 right-3 hover:scale-105 transition-all duration-300 ease-in-out"
+                        src="./Assets/images/hero-section-Image.png" alt="Hero Section Image" width="200" height="200">
+                </div>
+            </section>
+        </main>
     <script src="./scripts/main.js"></script>
 </body>
 
