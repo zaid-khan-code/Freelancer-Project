@@ -9,3 +9,11 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     mobileOverlay.classList.add('hidden');
 });
+
+// Close the mobile menu when a link is clicked
+const mobileLinks = mobileOverlay.querySelectorAll('a');
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileOverlay.classList.add('hidden');
+    });
+});

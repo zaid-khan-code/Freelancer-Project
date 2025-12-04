@@ -4,8 +4,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'gilroy-extra-bold': ['Gilroy-ExtraBold', 'sans-serif'],
-                'gilroy': ['Gilroy-ExtraBold'],
+                redhat: ['"Red Hat Display"', 'sans-serif'],
             },
         },
     },
